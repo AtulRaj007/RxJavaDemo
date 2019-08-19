@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">RxJavaDemo</string>
+    <string name="str_first">First</string>
+    <string name="str_second">Second</string>
+    <string name="str_third">Third</string>
+    <string name="str_fourth">Fourth</string>
+    <string name="str_fifth">Fifth</string>
+    <string name="str_sixth">Sixth</string>
+    <string name="str_seventh">Seventh</string>
+    <string name="str_eighth">Eighth</string>
+    <string name="str_ninth">Ninth</string>
 </resources>
