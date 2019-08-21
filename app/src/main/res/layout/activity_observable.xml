@@ -30,6 +30,46 @@
             android:textAllCaps="false"
             android:textColor="@color/colorWhite" />
 
+        <Button
+            android:id="@+id/btn_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/str_third"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/btn_fourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/str_fourth"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/btn_fifth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/str_fifth"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/btn_sixth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/str_sixth"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
 
     </LinearLayout>
 
