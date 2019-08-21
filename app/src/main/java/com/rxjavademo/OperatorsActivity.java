@@ -18,10 +18,9 @@ import io.reactivex.functions.Function;
 import io.reactivex.functions.Predicate;
 import io.reactivex.schedulers.Schedulers;
 
-public class FirstActivity extends AppCompatActivity {
-    // Adding Comment.
+public class OperatorsActivity extends AppCompatActivity {
 
-    private static final String TAG = FirstActivity.class.getSimpleName();
+    private static final String TAG = OperatorsActivity.class.getSimpleName();
     View.OnClickListener onClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -72,6 +71,9 @@ public class FirstActivity extends AppCompatActivity {
         findViewById(R.id.btn_ninth).setOnClickListener(onClickListener);
     }
 
+    /**
+     *
+     */
     private void first() {
         final String[] names = {"First", "Second", "Third", "Fourth", "Fifth"};
         Observable<String> observable = Observable.create(new ObservableOnSubscribe<String>() {
@@ -335,27 +337,27 @@ public class FirstActivity extends AppCompatActivity {
     }
 
     private void ninth() {
-        Observable<Integer> observable=Observable.just(1,2,3,4,5,6);
+        Observable<Integer> observable = Observable.just(1, 2, 3, 4, 5, 6);
 
-        Observer<Integer> observer=new Observer<Integer>() {
+        Observer<Integer> observer = new Observer<Integer>() {
             @Override
             public void onSubscribe(Disposable d) {
-                Log.e(TAG,">>>>> onSubscribe");
+                Log.e(TAG, ">>>>> onSubscribe");
             }
 
             @Override
             public void onNext(Integer integer) {
-                Log.e(TAG,">>>>> onNext ::"+integer);
+                Log.e(TAG, ">>>>> onNext ::" + integer);
             }
 
             @Override
             public void onError(Throwable e) {
-                Log.e(TAG,">>>>> onError");
+                Log.e(TAG, ">>>>> onError");
             }
 
             @Override
             public void onComplete() {
-                Log.e(TAG,">>>>> onComplete");
+                Log.e(TAG, ">>>>> onComplete");
             }
         };
 
@@ -363,7 +365,7 @@ public class FirstActivity extends AppCompatActivity {
                 .filter(new Predicate<Integer>() {
                     @Override
                     public boolean test(Integer integer) throws Exception {
-                        return integer%2==0;
+                        return integer % 2 == 0;
                     }
                 })
 

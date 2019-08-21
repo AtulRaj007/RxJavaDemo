@@ -9,4 +9,5 @@
     <string name="str_seventh">Seventh</string>
     <string name="str_eighth">Eighth</string>
     <string name="str_ninth">Ninth</string>
+    <string name="title_activity_observable">ObservableActivity</string>
 </resources>
